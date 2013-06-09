@@ -1,17 +1,26 @@
 {% extends "::base.html.twig" %}
 
-{% block content_part %}
+{% block heading_breadcrumbs %}
+<div class="row-fluid breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">Booking</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a> <span class="divider">/</span></li>
+            <li class="active">Booking</li>
+        </ul>
+    </div><!--/container-->
+</div>
+{% endblock %}
 
+{% block content_part %}
 <!--=== Content Part ===-->
 <div class="container">		
     <div class="row-fluid">
         <div class="span9">
-            <div class="headline"><h3>Book a Room</h3></div>
             <div class="myallocator">
                 <iframe src="https://myallocator.com/booknow/Ne96YOAywhUCXR1S-3kQEQ" style="width: 410px; height: 400px; border: none" frameBorder="0" allowtransparency="true"></iframe>
             </div>
         </div><!--/span9-->
-
     	<div class="span3">
             <!-- Our Services -->
             <div class="who margin-bottom-30">
@@ -26,7 +35,6 @@
                     <li><a href="#"><i class="icon-ok"></i>Hostel cleaned every day</a></li>
                 </ul>
             </div>
-
             <!-- Contact Us -->
             <div class="who margin-bottom-30">
                 <div class="headline"><h3>Contact Us</h3></div>
@@ -41,54 +49,5 @@
     </div><!--/row-fluid-->        
 </div><!--/container-->		
 <!--=== End Content Part ===-->
-
-
-{#
-<!--=== Content Part ===-->
-<div class="body">
-    <div class="breadcrumbs margin-bottom-50">
-    	<div class="container">
-            <h1 class="color-green pull-left">Booking</h1>
-            <ul class="pull-right breadcrumb">
-                <li><a href="/">Home</a> <span class="divider">/</span></li>
-                <li class="active">Booking</li>
-            </ul>
-        </div><!--/container-->
-    </div><!--/breadcrumbs-->
-    <div class="container">		
-        <div class="row-fluid margin-bottom-10">
-            <iframe src="https://myallocator.com/booknow/Ne96YOAywhUCXR1S-3kQEQ" style="width: 410px; height: 400px; border: none" frameBorder="0" allowtransparency="true"></iframe>
-            <form class="reg-page">
-            <h3>Register a new account</h3>
-            <div class="controls">    
-                <label>First Name</label>
-                <input type="text" class="span12" />
-                <label>Last Name</label>
-                <input type="text" class="span12" />
-                <label>Email Address <span class="color-red">*</span></label>
-                <input type="text" class="span12" />
-            </div>
-            <div class="controls">
-                <div class="span6">
-                    <label>Password <span class="color-red">*</span></label>
-                    <input type="text" class="span12" />
-                </div>
-                <div class="span6">
-                    <label>Confirm Password <span class="color-red">*</span></label>
-                    <input type="text" class="span12" />
-                </div>
-            </div>
-            <div class="controls form-inline">
-                <label class="checkbox"><input type="checkbox" />&nbsp; I read <a href="">Terms and Conditions</a></label>
-                <button class="btn-u pull-right" type="submit">Register</button>
-            </div>
-            <hr />
-            <p>Already Signed Up? Click <a href="page_login.html" class="color-green">Sign In</a> to login your account.</p>
-        </form>
-    </div><!--/row-fluid-->
-</div><!--/body-->
-<!--=== End Content Part ===-->
-#}
-
 {% endblock %}
     

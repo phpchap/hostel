@@ -1,12 +1,58 @@
 {% extends "::base.html.twig" %}
 
+{% block heading_breadcrumbs %}
+<div class="row-fluid breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">Gallery</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a> <span class="divider">/</span></li>
+            <li class="active">Gallery</li>
+        </ul>
+    </div><!--/container-->
+</div>
+{% endblock %}
+
+
 {% block content_part %}
 
 <!--=== Content Part ===-->
 <div class="container">		
     <div class="row-fluid">
+    	<!-- Thumbnail (Default) -->
+        <ul class="thumbnails">
+            <li class="span4">
+                <div class="thumbnail thumbnail-kenburn">
+                    <div class="overflow-hidden"><img src="/assets/img/carousel/5.jpg" alt=""></div>
+                    <div class="caption">
+                        <h3>Friendly Staff</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nullam nieh.</p>
+                        <p><a href="#" class="btn btn-success">Book Now</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class="span4">
+                <div class="thumbnail thumbnail-kenburn">
+                    <div class="overflow-hidden"><img src="/assets/img/carousel/6.jpg" alt=""></div>
+                    <div class="caption">
+                        <h3>Secure Storage Area</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nullam nieh.</p>
+                        <p><a href="#" class="btn btn-success">Book Now</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class="span4">
+                <div class="thumbnail thumbnail-kenburn">
+                    <div class="overflow-hidden"><img src="/assets/img/carousel/7.jpg" alt=""></div>
+                    <div class="caption">
+                        <h3>Clean and Private Dorms</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nullam nieh.</p>
+                        <p><a href="#" class="btn btn-success">Book Now</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul><!--/thumbnails-->                        
     	<!-- Unify Thumbnail -->
-        <div class="headline"><h3>Unify Thumbnail</h3></div>
+        <div class="headline"><h3>Rooms</h3></div>
         <ul class="thumbnails">
             <li class="span3">
                 <div class="thumbnail-style thumbnail-kenburn">
@@ -51,36 +97,7 @@
         </ul><!--/thumbnails-->
     
     	<!-- Unify Thumbnail -->
-        <div class="headline"><h3>Unify Thumbnail</h3></div>
-        <ul class="thumbnails">
-            <li class="span3 thumbnail-style thumbnail-kenburn">
-                <div class="overflow-hidden"><img src="/assets/img/carousel/7.jpg" alt="" /></div>
-                <h3><a href="#">Our Work</a></h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                <p><a class="btn-u btn-u-small" href="#">Read more</a></p>
-            </li>
-            <li class="span3 thumbnail-style thumbnail-kenburn">
-                <div class="overflow-hidden"><img src="/assets/img/carousel/10.jpg" alt="" /></div>
-                <h3><a href="#">Our Work</a></h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                <p><a class="btn-u btn-u-small" href="#">Read more</a></p>
-            </li>
-            <li class="span3 thumbnail-style thumbnail-kenburn">
-                <div class="overflow-hidden"><img src="/assets/img/carousel/8.jpg" alt="" /></div>
-                <h3><a href="#">Our Work</a></h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                <p><a class="btn-u btn-u-small" href="#">Read more</a></p>
-            </li>
-            <li class="span3 thumbnail-style thumbnail-kenburn">
-                <div class="overflow-hidden"><img src="/assets/img/carousel/6.jpg" alt="" /></div>
-                <h3><a href="#">Our Work</a></h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                <p><a class="btn-u btn-u-small" href="#">Read more</a></p>
-            </li>
-        </ul><!--/thumbnails-->
-
-    	<!-- Unify Thumbnail -->
-        <div class="headline"><h3>Unify Thumbnail</h3></div>
+        <div class="headline"><h3>Local Area</h3></div>
         <ul class="thumbnails">
             <li class="span3">
                 <div class="thumbnail-style">
@@ -131,41 +148,6 @@
                 </div>
             </li>
         </ul><!--/thumbnails-->
-
-    	<!-- Thumbnail (Default) -->
-        <div class="headline"><h3>Highly customizable (Default)</h3></div>
-        <ul class="thumbnails">
-            <li class="span4">
-                <div class="thumbnail thumbnail-kenburn">
-                    <div class="overflow-hidden"><img src="/assets/img/carousel/5.jpg" alt=""></div>
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nullam nieh.</p>
-                        <p><a href="#" class="btn-u">Some Action</a></p>
-                    </div>
-                </div>
-            </li>
-            <li class="span4">
-                <div class="thumbnail thumbnail-kenburn">
-                    <div class="overflow-hidden"><img src="/assets/img/carousel/6.jpg" alt=""></div>
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nullam nieh.</p>
-                        <p><a href="#" class="btn-u">Some Action</a></p>
-                    </div>
-                </div>
-            </li>
-            <li class="span4">
-                <div class="thumbnail thumbnail-kenburn">
-                    <div class="overflow-hidden"><img src="/assets/img/carousel/7.jpg" alt=""></div>
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nullam nieh.</p>
-                        <p><a href="#" class="btn-u">Some Action</a></p>
-                    </div>
-                </div>
-            </li>
-        </ul><!--/thumbnails-->                        
 
     	<!-- Thumbnail (Default) -->
         <div class="headline"><h3>Default Thumbnails</h3></div>
