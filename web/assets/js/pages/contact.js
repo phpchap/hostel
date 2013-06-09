@@ -1,23 +1,20 @@
 var Contact = function () {
-
-    return {
-        
+    return {        
         //Map
         initMap: function () {
-			var map;
-			$(document).ready(function(){
-			  map = new GMaps({
-				div: '#map',
-				lat: -13.004333,
-				lng: -38.494333
-			  });
-			   var marker = map.addMarker({
-		            lat: -13.004333,
-					lng: -38.494333,
-		            title: 'Loop, Inc.'
-		        });
-			});
+            var map;            
+            $(document).ready(function(){
+                map = new GMaps({ 
+                    div: '#map',
+                    lat: 51.515067,
+                    lng: -0.174708
+                });
+                var marker = map.addMarker({
+                    lat: 51.515067,
+                    lng: -0.174708,
+                    title: 'Atlas Hostels'
+                });
+            });
         }
-
     };
 }();

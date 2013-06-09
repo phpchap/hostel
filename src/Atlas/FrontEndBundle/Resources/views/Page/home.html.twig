@@ -1,31 +1,24 @@
 {% extends "::base.html.twig" %}
 
-{% block after_body %}
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=255995124541477";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+{% block before_head %}
+    <script type="text/javascript"> var bookNowWidth = 610; function bookNowApp(e){var t=document.createElement("img");t.style.cursor="pointer";t.src="https://myallocator.com/images/booknow/close_button.png";t.style.zIndex=52;t.style.position="absolute";t.style.left="50%";document.getElementsByTagName("body")[0].appendChild(t);var n=document.createElement("div");n.style.position="fixed";n.style.top="0px";n.style.left="0px";n.style.overflow="hidden";n.style.display="none";n.style.width="100%";n.style.height="100%";n.style.opacity=.7;n.style.MozOpacity=.7;n.style.filter="alpha(opacity=70)";n.style.zIndex=50;n.style.display="block";n.style.backgroundColor="#000000";document.getElementsByTagName("body")[0].appendChild(n);var r=document.createElement("iframe");r.style.width=bookNowWidth+"px";r.style.height="100%";r.style.border="none";r.a="true";r.style.position="absolute";r.style.left="50%";r.style.top="50px";r.style.marginLeft=-(bookNowWidth/2)+"px";r.allowTransparency="true";r.frameBorder = "0";r.style.zIndex=51;r.src="https://myallocator.com/en/booknow/"+e;document.getElementsByTagName("body")[0].appendChild(r);n.addEventListener?n.addEventListener("click",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)},!1):n.attachEvent("onclick",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)});t.addEventListener?t.addEventListener("click",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)},!1):t.attachEvent("onclick",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)});t.style.marginLeft=bookNowWidth/2-35+"px";t.style.top="38px";window.scroll(0,0)} </script>
 {% endblock %}
 
 {% block slider %}
 <!--=== Slider ===-->
-<div class="slider-inner">
+<div class="slider-inner" style="position:relative">
     <div id="da-slider" class="da-slider">
         <div class="da-slide">
-            <h2><i>24 Hour Check-in</i> <br /> <i>£17 a night</i> <br /> <i>Free Wi-fi</i></h2>
-            <p>{#<i></i><br /><i>Clean Kitchen with washing machine and dryer</i><br /><i>Close to central London</i>#}<a href="#" class="btn-buy">Book Now</a></p>
+            <h2><i>24 Hr Checkin</i> <br /> <i>£17 a night</i> <br /> <i>Free Wi-fi</i></h2>
+            <p><a href="{{ path('atlas_front_end_booking') }}" class="btn-large btn-success" style="z-index:99999;">Book a Room</a></p>
         </div>
         <div class="da-slide">
-            <h2><i>Cleaned every day</i><br/><i>Free Luggage Storage</i><br/><i>Quiet location</i></h2>
-            <p>{#<i>Clean private shower rooms</i><br/><i>Friendly staff available 24 hours</i>#}<a href="#" class="btn-buy hover-effect">Book Now</a></p>
+            <h2><i>Daily cleaning</i><br/><i>Quiet location</i><br/><i>Safe Storage</i></h2>
+            <p><a href="{{ path('atlas_front_end_booking') }}" class="btn-large btn-success" style="z-index:99999;">Book a Room</a></p>
         </div>
         <div class="da-slide">
             <h2><i>Private Shower</i> <br /> <i>Friendly Staff</i> <br /> <i>Safe Lockers</i></h2>
-            <p>{#<i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i>#}</p>
+            <p><a href="{{ path('atlas_front_end_booking') }}" class="btn-large btn-success" style="z-index:99999;">Book a Room</a></p>
         </div>
         <nav class="da-arrows">
             <span class="da-arrows-prev"></span>
@@ -39,7 +32,6 @@
 {% block content_part %}
 <!--=== Content Part ===-->
 <div class="container">		
-
     <!-- About Us -->
     <div class="headline"><h3>Atlas Hostels</h3></div>
 	<div class="row-fluid margin-bottom-30">
@@ -64,7 +56,6 @@
         </div>
     </div><!--/row-fluid-->	
     <!--//End About Us -->
-
 </div><!--/container-->		
 <!-- End Content Part -->
 {% endblock %}
