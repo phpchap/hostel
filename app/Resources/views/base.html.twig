@@ -27,6 +27,9 @@
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="{{ asset('/assets/css/themes/blue.css') }}" id="style_color">
     <link rel="stylesheet" href="{{ asset('/assets/css/themes/headers/header1-blue.css') }}" id="style_color-header-1">    
+    <link rel="stylesheet" href="{{ asset('/assets/plugins/fancybox/source/jquery.fancybox.css') }}">           
+    <link rel="stylesheet" href="{{ asset('/assets/css/effects.css') }}">           
+
     {% block before_head %}{% endblock %}
 </head> 
 
@@ -232,12 +235,14 @@
 <!-- JS Page Level -->           
 <script type="text/javascript" src="/assets/js/app.js"></script>
 <script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript" src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
         App.initSliders();
         App.initBxSlider1();
-        Index.initParallaxSlider();        
+        Index.initParallaxSlider();      
+        {% block js_init %}{% endblock %}  
     });
 </script>
 <!--[if lt IE 9]>
