@@ -30,6 +30,6 @@ atlas_front_end_privacy_policy:
     pattern:  /privacy
     defaults: { _controller: AtlasFrontEndBundle:Page:privacy }
 
-tlas_front_end_terms:
+atlas_front_end_terms:
     pattern:  /terms
     defaults: { _controller: AtlasFrontEndBundle:Page:terms }
