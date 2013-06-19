@@ -1,1 +1,88 @@
- 
+{% extends "::base.html.twig" %}
+
+{% block heading_breadcrumbs %}
+<div class="row-fluid breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">Important Notice</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a> <span class="divider">/</span></li>
+            <li class="active">Important Notice</li>
+        </ul>
+    </div><!--/container-->
+</div>
+{% endblock %}
+
+{% block content_part %}
+<!--=== Content Part ===-->
+<div class="container">		
+    <div class="row-fluid privacy margin-bottom-30">
+
+        <h4>General</h4>
+
+        <p>This website www.atlashostelsplc.com has been prepared by Atlas Hostels Plc, a public limited company incorporated in England and Wales (company number 07903930) whose registered office is at 2ND FLOOR BERKLEY SQUARE HOUSE, BERKELEY SQUARE, LONDON, UNITED KINGDOM, W1J 6BD. This website has been prepared for general information purposes only.</p>
+        <p>This website is provided for information purposes only and is in no way intended to replace any such documentation or offer any sort of investment advice. An investment in Atlas Hostels Plc is to be based upon information in a memorandum of information (“Investment Memorandum”) and not on information contained in this website. If any prospective investor is in any doubt about the contents of any Atlas Hostels Plc documents they should consult their accountant, legal or professional adviser or financial adviser.</p>
+        <p>The information contained in this website is directed towards experienced and professional investors only and specifically towards:</P
+        <ul>
+        <li>investment professionals (as defined in Regulation 19(5) of the FPO);</li>
+        <li>certified high net worth individuals (as defined in Regulation 48(2) of the FPO);</li>
+        <li>high net worth companies, unincorporated associations, etc. (as defined in Regulation 49(2) of the FPO)</li>
+        <li>certified sophisticated investors (as defined in Regulation 50(1) of the FPO);</li>
+        <li>self-certified sophisticated investors (as defined in Regulation 50A(1) of the FPO); and/or</li>
+        <li>overseas recipients (as defined in Regulation 12(1) of the FPO).</li>
+        </ul>
+
+        <h4>Communications to Investment Professionals</h4>
+        <p>A person is an investment professional if that person is appropriately authorised by the Financial Services Authority, is specifically exempted by the Financial Services Authority for the purposes of the regulated activity to which this document relates, is a person whose ordinary activities involve carrying on the controlled activity to which this document relates or otherwise as defined in Regulation 19(5) of the FPO.</p>
+
+        <h4>Communications to Certified High Net Worth Individuals</h4>
+
+        <p>A person is a certified high net worth individual if that person has signed a statement of high net worth within the period of 12 months before the communication is made which complies with the requirements of Regulation 48(2) and Schedule 5 of the FPO. In particular, a certified high net worth individual is a person who satisfies at least one of the following requirements: </p>
+        <p>(i) during the financial year immediately preceding the date of the statement, had an annual income to the value of £100,000 or more; </p>
+        <p>(ii) throughout the financial year immediately preceding the date of the statement, had net assets to the value of £250,000 or more. Net assets for these purposes do not include – </p>
+        <ul>
+        <li>i. the property which is the recipient’s residence or any loan secured on that residence; </li>
+        <li>ii. any rights under a qualifying contract of insurance within the meaning of the FSMA (Regulated Activities) Order 2000; or </li>
+        <li>iii. any benefits (in the form of pensions or otherwise) which are payable on the termination of service or on death or retirement and to which the recipient is (or the recipient's dependants are), or may be, entitled. </li>
+        </ul>
+        <p>If the recipient is in doubt about the investment to which this communication relates the recipient should consult an authorised person specialising in advising in participation in investments of the kind in question.</p>
+
+        <h4>Communications to High Net Worth Companies, Unincorporated Associations, etc.</h4>
+
+        <p>An entity falls within Regulation 49(2) of the FPO if it is: </p>
+        <p>(i) a body corporate which has, or which is a member of a group in which an undertaking has a called-up share capital or net assets of not less than </p>
+        <ul>
+        <li>i. £500,000, where the body corporate has more than 20 members or is a subsidiary of an undertaking which has more than 20 members; or</li>
+        <li>ii. otherwise, £5 million; </li>
+        <li>(ii) any unincorporated association or partnership which has net assets of not less than £5 million; </li>
+        <li>(iii) the trustee of a high value trust; or </li>
+        <li>(iv) otherwise as defined in Regulation 49(2) of the FPO.</li>
+        </ul>
+
+        <h4>Communications to Certified Sophisticated Investors</h4>
+
+        <p>A sophisticated investor is a person: </p>
+        <ul>
+        <li>(i) who has a current certificate in writing or other legible form signed and dated (within the period of three years ending with the date on which this communication is made) by a person authorised to carry on that regulated activity by the FSA, to the effect that he is sufficiently knowledgeable to understand the risks associated with that description of investment; and </li>
+        <li>(ii) who has signed, within the period of twelve months ending with the day on which the communication is made, a statement in the terms set out in Article 50(1)(b) of the FPO; </li>
+        </ul>
+
+        <p>Reliance on this document for the purpose of engaging in any investment activity may expose the recipient to a significant risk of losing all of the property invested or of incurring additional liability. If the recipient is in any doubt about the investment this Information Memorandum relates to, the recipient should consult an authorised person specialising in advising on investments of the kind in question.</p>
+
+        <h4>Communications to Self-Certified Sophisticated Investors </h4>
+        <p>A self-certified sophisticated investor is an individual who has signed, within the period of twelve months ending with the date on which this communication is made, a statement complying with Part II of Schedule 5 of the FPO. A Self Certified Sophisticated Investor is a person who satisfies at least one of the following requirements: </p>
+        <ul>
+        <li>(i) is a member of a network or syndicate of business angels and has been so for at least the last six months prior to the date of the statement; </li>
+        <li>(ii) has made more than one investment in an unlisted company in the two years prior to the date of the statement; </li>
+        <li>(iii) is working, or has worked in the two years prior to the date below, in a professional capacity in the private equity sector, or in the provision of finance for small and medium enterprises; </li>
+        <li>(iv) is currently, or has been in the two years prior to the date below, a director of a company with an annual turnover of at least £1 million. </li>
+        </ul>
+        <p>If the recipient is in any doubt about the investment to which this communication relates, the recipient should consult an authorised person specialising in advising on investments of the kind in question.</p>
+
+        <h4>Communications to Overseas Recipients</h4>
+        <p>An overseas recipient is a person who receives this communication outside the United Kingdom. </p>
+        <p>The directors of Atlas Hostels Plc have taken all reasonable care to ensure that the facts stated in these documents are true and accurate in all material respects, and that there are no other facts the omission of which would make misleading any statement in the documents, whether of facts or of opinion. All the directors accept responsibility accordingly.</p>
+    </div><!--/row-fluid-->        
+</div><!--/container-->		
+<!--=== End Content Part ===-->
+{% endblock %}
+     
