@@ -1,35 +1,31 @@
-atlas_front_end_homepage:
+atlas_homepage:
     pattern:  /
     defaults: { _controller: AtlasFrontEndBundle:Page:home }
 
-atlas_front_end_booking:
-    pattern:  /booking
-    defaults: { _controller: AtlasFrontEndBundle:Page:booking }
+atlas_aims_and_objectives:
+    pattern:  /aims-and-objectives
+    defaults: { _controller: AtlasFrontEndBundle:Page:aimsAndObjectives }
 
-atlas_front_end_rooms:
-    pattern:  /rooms
-    defaults: { _controller: AtlasFrontEndBundle:Page:rooms }
+atlas_our_operations:
+    pattern:  /our-operations
+    defaults: { _controller: AtlasFrontEndBundle:Page:ourOperations }
 
-atlas_front_end_gallery:
-    pattern:  /gallery
-    defaults: { _controller: AtlasFrontEndBundle:Page:gallery }
+atlas_contacts:
+    pattern:  /contacts
+    defaults: { _controller: AtlasFrontEndBundle:Page:contacts }
 
-atlas_front_end_location:
-    pattern:  /location
-    defaults: { _controller: AtlasFrontEndBundle:Page:location }
-
-atlas_front_end_help:
-    pattern:  /help
-    defaults: { _controller: AtlasFrontEndBundle:Page:help }
-
-atlas_front_end_investors:
-    pattern:  /investors
-    defaults: { _controller: AtlasFrontEndBundle:Page:investors }
-
-atlas_front_end_privacy_policy:
+atlas_privacy_policy:
     pattern:  /privacy
     defaults: { _controller: AtlasFrontEndBundle:Page:privacy }
 
-atlas_front_end_terms:
+atlas_terms:
     pattern:  /terms
     defaults: { _controller: AtlasFrontEndBundle:Page:terms }
+
+atlas_important_notice:
+    pattern:  /important-notice
+    defaults: { _controller: AtlasFrontEndBundle:Page:importantNotice }
+
+atlas_risk_warning:
+    pattern:  /risk-warning
+    defaults: { _controller: AtlasFrontEndBundle:Page:riskWarning }    

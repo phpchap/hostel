@@ -6,12 +6,12 @@ var Contact = function () {
             $(document).ready(function(){
                 map = new GMaps({ 
                     div: '#map',
-                    lat: 51.515067,
-                    lng: -0.174708
+                    lat: 51.509878,
+                    lng: -0.144584
                 });
                 var marker = map.addMarker({
-                    lat: 51.515067,
-                    lng: -0.174708,
+                    lat: 51.509878,
+                    lng: -0.144584,
                     title: 'Atlas Hostels'
                 });
             });

@@ -5,7 +5,48 @@ namespace Atlas\FrontEndBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PageController extends Controller {
+    
+    public function homeAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:home.html.twig');
+    }
+    
+    public function aimsAndObjectivesAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:aimsAndObjectives.html.twig');
+    }
+    
+    public function ourOperationsAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:ourOperations.html.twig');
+    }
 
+    public function contactsAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:contacts.html.twig');
+    }
+
+    public function privacyAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:privacy.html.twig');
+    }
+
+    public function termsAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:terms.html.twig');
+    }
+
+    public function importantNoticeAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:importantNotice.html.twig');
+    }
+
+    public function riskWarningAction()
+    {
+        return $this->render('AtlasFrontEndBundle:Page:riskWarning.html.twig');
+    }
+    
+/*
     public function homeAction() {
         return $this->render('AtlasFrontEndBundle:Page:home.html.twig');
     }
@@ -41,4 +82,6 @@ class PageController extends Controller {
     public function termsAction() {
         return $this->render('AtlasFrontEndBundle:Page:terms.html.twig');
     }        
+ * 
+ */
 }
