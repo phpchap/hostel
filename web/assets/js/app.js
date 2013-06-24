@@ -25,7 +25,7 @@ var App = function () {
 
     function handleBootstrap() {
         jQuery('.carousel').carousel({
-            interval: 15000,
+            interval: 4000,
             pause: 'hover'
         });
         jQuery('.tooltips').tooltip();
